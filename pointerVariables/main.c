@@ -21,7 +21,8 @@ int main(void)
    printf(" pD %p points to %lf\n", pD, *pD);
    printf(" pC %p points to %c\n\n", pC, *pC);
 
-   printf(" pData %p points to %d\n", pData, *pData); /* pData == &data[0] */
+   /* pData == &data[0] */
+   printf(" pData %p points to %d\n", pData, *pData); 
 
    /* pData is a pointer variable, so you can update the value,
     * for instance pData++.
@@ -30,7 +31,8 @@ int main(void)
     * An array variable is memory bound.
     */
    pData++;
-   printf(" pData %p points to %d\n\n", pData,  *pData); /* pData == &data[1] */
+   /* pData == &data[1] */
+   printf(" pData %p points to %d\n\n", pData,  *pData); 
 
    printf(" Pointer distance = %ld int's\n", &data[3] - &data[0]);
 
