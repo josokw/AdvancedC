@@ -1,3 +1,3 @@
-# AdvancedC
-Some C code examples for teaching coding at an intermediate programming level.
-All examples are compilable using QtCreator by opening the related .pro file.
+# Advanced C
+Several C code examples for teaching coding at an intermediate programming level.
+Each example is compilable using QtCreator by opening the related .pro file.
