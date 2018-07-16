@@ -86,3 +86,13 @@ CMakeLists.txt.user*
 
 # GNU Makefile
 depend
+voidPointers/voidPointers
+argcargv-isInt/argcargvIsInt
+arraySize/arraySize
+queueCSLL/queueCSLL
+atexit/atexit
+atoiatof/atoiatof
+average2D/average2D
+averageDdata/averageDdata
+bool/bool
+callback/callback
