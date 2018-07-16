@@ -22,7 +22,7 @@ int main(void)
    printf(" pC %p points to %c\n\n", pC, *pC);
 
    /* pData == &data[0] */
-   printf(" pData %p points to %d\n", pData, *pData); 
+   printf(" pData %p points to %d\n\n", pData, *pData); 
 
    /* pData is a pointer variable, so you can update the value, for 
     * instance pData++.
@@ -38,8 +38,8 @@ int main(void)
    /* pData == &data[4] */
    printf(" pData %p points to %d\n\n", pData, *pData); 
 
-   /* A pointer difference is typed as size_t */
-   printf(" pData point to data[%ld]\n", pData - data);
+   /* A pointer difference is typed as ptrdiff_t */
+   printf(" pData points to data[%ld]\n\n", pData - data);
 
    return 0;
 }
