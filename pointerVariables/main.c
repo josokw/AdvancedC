@@ -40,15 +40,15 @@ int main(void)
    /* pData == &data[4] */
    printf(" pData %p points to %d\n\n", pData, *pData); 
 
-   pData += 10;
-   /* Array bounds checking */
-   if ((pData < data) || (pData > data + DATASIZE)
-   {
-       fprintf(stderr, " pData outside 'data' array boundary\n\n");
-   }
-
    /* A pointer difference is typed as ptrdiff_t */
    printf(" pData points to data[%ld]\n\n", pData - data);
+
+   pData += 10;
+   /* Array bounds checking */
+   if ((pData < data) || (pData > data + DATASIZE))
+   {
+       fprintf(stderr, " pData accessing 'data' out of bounds\n\n");
+   }
 
    return 0;
 }
