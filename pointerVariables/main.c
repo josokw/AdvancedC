@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+#define DATASIZE 5
+
 int main(void)
 {
    int iVar = 1;
    double dVar = 2.2;
    char cVar = 'A';
-   int data[5] = {1, 2, 3, 4, 5};
+   int data[DATASIZE] = {1, 2, 3, 4, 5};
 
    /* Pointer variables of different types */
    int *pI = &iVar;
@@ -37,6 +39,13 @@ int main(void)
    pData += 3;
    /* pData == &data[4] */
    printf(" pData %p points to %d\n\n", pData, *pData); 
+
+   pData += 10;
+   /* Array bounds checking */
+   if ((pData < data) || (pData > data + DATASIZE)
+   {
+       fprintf(stderr, " pData outside 'data' array boundary\n\n");
+   }
 
    /* A pointer difference is typed as ptrdiff_t */
    printf(" pData points to data[%ld]\n\n", pData - data);
