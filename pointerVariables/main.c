@@ -5,7 +5,7 @@ int main(void)
    int iVar = 1;
    double dVar = 2.2;
    char cVar = 'A';
-   int data[3] = {1, 2, 3};
+   int data[5] = {1, 2, 3, 4, 5};
 
    /* Pointer variables of different types */
    int *pI = &iVar;
@@ -24,17 +24,22 @@ int main(void)
    /* pData == &data[0] */
    printf(" pData %p points to %d\n", pData, *pData); 
 
-   /* pData is a pointer variable, so you can update the value,
-    * for instance pData++.
+   /* pData is a pointer variable, so you can update the value, for 
+    * instance pData++.
     * data++ is not possible, this will result in a compiler error,
     * because you can not assign a new pointer value to an array variable.
     * An array variable is memory bound.
     */
    pData++;
    /* pData == &data[1] */
-   printf(" pData %p points to %d\n\n", pData,  *pData); 
+   printf(" pData %p points to %d\n\n", pData, *pData); 
 
-   printf(" Pointer distance = %ld int's\n", &data[3] - &data[0]);
+   pData += 3;
+   /* pData == &data[4] */
+   printf(" pData %p points to %d\n\n", pData, *pData); 
+
+   /* A pointer difference is typed as size_t */
+   printf(" pData point to data[%ld]\n", pData - data);
 
    return 0;
 }
