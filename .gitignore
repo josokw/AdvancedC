@@ -102,3 +102,7 @@ complex-tgmath/complextgmath
 deepcopy/deepcopy
 echo-argcargv-forloop/echo-argc-argv
 function-pointers/function-pointers
+hexdump/hexdump
+macros/macros
+mixedtypes/mixedtypes
+pointerArray/pointerArray
