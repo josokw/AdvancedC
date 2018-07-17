@@ -112,3 +112,5 @@ queueCSLL/queueCSLL
 singlyLinkedList/singlyLinkedList
 swap/swap
 testMaxAllocation/testMaxAllocation
+unitTesting/introUnitTesting/functions/introUTfunctions
+unitTesting/introUnitTesting/functionsTests/introUTfunctionsTests
