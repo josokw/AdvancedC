@@ -68,7 +68,7 @@ qrc_*.cpp
 ui_*.h
 *.qmlc
 *.jsc
-Makefile*
+# Makefile*
 *build-*
 
 # Qt unit tests
@@ -88,7 +88,6 @@ CMakeLists.txt.user*
 depend
 argcargv-isInt/argcargvIsInt
 arraySize/arraySize
-queueCSLL/queueCSLL
 atexit/atexit
 atoiatof/atoiatof
 average2D/average2D
@@ -109,3 +108,7 @@ voidPointers/voidPointers
 pointerVariables/pointerVariables
 qsort/qsort
 qsort-ints/qsort-ints
+queueCSLL/queueCSLL
+singlyLinkedList/singlyLinkedList
+swap/swap
+testMaxAllocation/testMaxAllocation
