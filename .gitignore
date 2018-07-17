@@ -86,7 +86,6 @@ CMakeLists.txt.user*
 
 # GNU Makefile
 depend
-voidPointers/voidPointers
 argcargv-isInt/argcargvIsInt
 arraySize/arraySize
 queueCSLL/queueCSLL
@@ -106,3 +105,7 @@ hexdump/hexdump
 macros/macros
 mixedtypes/mixedtypes
 pointerArray/pointerArray
+voidPointers/voidPointers
+pointerVariables/pointerVariables
+qsort/qsort
+qsort-ints/qsort-ints
