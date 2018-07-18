@@ -1,12 +1,15 @@
 CC = gcc
 INCLUDING = -I../functions
-CFLAGS = -std=c99 -Wall -pedantic $(INCLUDING)
+CFLAGS = -std=c99 -Wall -Wextra -Wpedantic \
+         -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
+         -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow \
+		 $(INCLUDING)
 
 EXECUTABLE = introUTfunctionsTests
-SOURCES := $(wildcard *.c) \
-           ../functions/functions.c
-HEADERS := $(wildcard *.h) \
-           ../functions/functions.h
+SOURCES = $(wildcard *.c) \
+          ../functions/functions.c
+HEADERS = $(wildcard *.h) \
+          ../functions/functions.h
 OBJECTS = $(SOURCES:.c=.o)
 
 .PHONY: all
