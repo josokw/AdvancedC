@@ -1,8 +1,7 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-typedef struct
-{
+typedef struct {
    float min;
    float max;
 } minmax_t;
@@ -12,4 +11,4 @@ float averageData(const float data[], int size);
 void setAverageData(float data[], int size, float average);
 void setLimitData(float data[], int size, float min, float max);
 
-#endif  // FUNCTIONS_H
+#endif // FUNCTIONS_H

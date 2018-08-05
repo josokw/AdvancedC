@@ -6,7 +6,7 @@
  * In QtCreator input commandline parameters:
  *
  *    Projects Build&Run, Run, Arguments
-*/
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,8 +20,9 @@ int main(int argc, char *argv[])
    if (argc < 2)
    {
       /* Error messages to stderr */
-      fprintf(stderr, "\tERROR %s: \n"
-                      "\tUSAGE: expected 1 or more commandline parameters\n\n",
+      fprintf(stderr,
+              "\tERROR %s: \n"
+              "\tUSAGE: expected 1 or more commandline parameters\n\n",
               argv[0]);
       exit(EXIT_FAILURE);
    }
@@ -33,7 +34,8 @@ int main(int argc, char *argv[])
    }
    puts("\n");
 
-   /* Print the third character of all command line arguments if available */
+   /* Print the third character of all command line arguments if available
+    */
    for (i = 1; i < argc; i++)
    {
       /* Check for availability third character */

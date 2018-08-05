@@ -3,8 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct node
-{
+typedef struct node {
    int data;
    struct node *pNextNode;
 } node_t;
@@ -16,8 +15,8 @@ void clearSLL(node_t **ppHead);
 
 int main(void)
 {
-   node_t *pHead = NULL;  /* Create an empty SLL,
-                             pHead is the 'owner' of the SLL */
+   node_t *pHead = NULL; /* Create an empty SLL,
+                            pHead is the 'owner' of the SLL */
    showSLL(pHead);
    printf("Size of the SLL = %lu\n", sizeSLL(pHead));
 
@@ -52,8 +51,8 @@ void showSLL(const node_t *pHead)
    {
       while (pNext != NULL)
       {
-         printf("Node %p:  Data = %d  pNext = %p\n",
-                pNext, pNext->data, pNext->pNextNode);
+         printf("Node %p:  Data = %d  pNext = %p\n", pNext, pNext->data,
+                pNext->pNextNode);
          pNext = pNext->pNextNode;
       }
    }
@@ -76,7 +75,7 @@ size_t sizeSLL(const node_t *pHead)
 void addSLL(node_t **ppHead, int data)
 {
    node_t *pNext = *ppHead;
-   node_t *pNew = (node_t*)malloc(sizeof(node_t));
+   node_t *pNew = (node_t *)malloc(sizeof(node_t));
 
    /* Check if allocation has succeeded */
    if (pNew != NULL)

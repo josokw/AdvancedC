@@ -28,7 +28,7 @@ int main(void)
    pushQueue(&queue, data);
    showQueue(&queue);
 
-   if(!emptyQueue(&queue))
+   if (!emptyQueue(&queue))
    {
       printf("\nFront iValue: %d\n", frontQueue(&queue)->intVal);
       printf("Front text:   %s\n", frontQueue(&queue)->text);

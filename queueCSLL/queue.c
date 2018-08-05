@@ -6,7 +6,7 @@
  * Needs only one external pointer pBack, that points at the back node.
  * The back node contains a pointer pointing to the front of the queue
  * (circular data structure).
-*/
+ */
 
 #include "queue.h"
 #include <stdio.h>
@@ -14,11 +14,11 @@
 
 void createQueue(queue_t *pQueue, data_t data)
 {
-   node_t *pNew = (node_t*)malloc(sizeof(node_t));
+   node_t *pNew = (node_t *)malloc(sizeof(node_t));
    pQueue->pBack = pNew;
    if (pNew != NULL)
    {
-      pNew->data = data;  /* copy input struct data */
+      pNew->data = data; /* copy input struct data */
       pNew->pNextNode = pNew;
    }
 }
@@ -30,18 +30,17 @@ int emptyQueue(const queue_t *pQueue)
 
 /** Returns number of nodes in queue.
  * @todo Add implementation.
-*/
+ */
 size_t sizeQueue(const queue_t *pQueue)
 {
    size_t size = 0;
    /* local pointer for traversing all nodes in queue */
    const node_t *pSize = pQueue->pBack;
 
-
    return size;
 }
 
-data_t* frontQueue(const queue_t *pQueue)
+data_t *frontQueue(const queue_t *pQueue)
 {
    data_t *pFrontData = NULL;
    if (!emptyQueue(pQueue))
@@ -51,7 +50,7 @@ data_t* frontQueue(const queue_t *pQueue)
    return pFrontData;
 }
 
-data_t* backQueue(const queue_t *pQueue)
+data_t *backQueue(const queue_t *pQueue)
 {
    data_t *pBackData = NULL;
    if (!emptyQueue(pQueue))
@@ -63,10 +62,10 @@ data_t* backQueue(const queue_t *pQueue)
 
 /** Push new data to the back of the queue.
  * @pre pQueue != NULL
-*/
+ */
 void pushQueue(queue_t *pQueue, data_t data)
 {
-   node_t *pNew = (node_t*)malloc(sizeof(node_t));
+   node_t *pNew = (node_t *)malloc(sizeof(node_t));
    if (pNew != NULL)
    {
       pNew->data = data;
@@ -78,7 +77,7 @@ void pushQueue(queue_t *pQueue, data_t data)
 
 /** Remove data from the front of the queue.
  * @pre pQueue != NULL
-*/
+ */
 void popQueue(queue_t *pQueue)
 {
    if (pQueue->pBack != NULL)
@@ -99,13 +98,11 @@ void popQueue(queue_t *pQueue)
 
 /** Emptying (delete) queue.
  * @todo Add implementation
-*/
+ */
 void deleteQueue(queue_t *pQueue)
 {
    /* local pointer for traversing all nodes in queue */
    node_t *pDelete = pQueue->pBack;
-
-
 }
 
 void showQueue(const queue_t *pQueue)
@@ -122,9 +119,8 @@ void showQueue(const queue_t *pQueue)
       do
       {
          pNext = pNext->pNextNode;
-         printf("pNode = %p  Data = '%d' '%s'  pNextNode = %p\n",
-                pNext, pNext->data.intVal, pNext->data.text, pNext->pNextNode);
-      }
-      while (pNext != pQueue->pBack);
+         printf("pNode = %p  Data = '%d' '%s'  pNextNode = %p\n", pNext,
+                pNext->data.intVal, pNext->data.text, pNext->pNextNode);
+      } while (pNext != pQueue->pBack);
    }
 }

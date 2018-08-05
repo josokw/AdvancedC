@@ -1,18 +1,18 @@
 /* bool type in C language: it is a logical type introduced from C99.
- * It is the replacement of _Bool type. It takes just 1 byte to store 
- * either true or false. 1 is stored when true is assigned and 0 is 
+ * It is the replacement of _Bool type. It takes just 1 byte to store
+ * either true or false. 1 is stored when true is assigned and 0 is
  * stored when false is assigned.
- * 
+ *
  * A pre-processor statement #include<stdbool.h> is added to the program
  * to use the bool type.
- * 
- * %d is the format specifier used to represent a bool in printf() 
+ *
+ * %d is the format specifier used to represent a bool in printf()
  * and scanf().
  */
 
 #include <ctype.h>
-#include <stdio.h>
 #include <stdbool.h>
+#include <stdio.h>
 #include <string.h>
 
 bool isEven(int x);
@@ -46,12 +46,12 @@ int main(void)
 
    if (stringIsAllUppercase(text1))
    {
-      printf("  String '%s' contains only uppercase characters\n\n", 
+      printf("  String '%s' contains only uppercase characters\n\n",
              text1);
    }
    if (!stringIsAllUppercase(text2))
    {
-      printf("  String '%s' contains not only uppercase characters\n\n", 
+      printf("  String '%s' contains not only uppercase characters\n\n",
              text2);
    }
 

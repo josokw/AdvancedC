@@ -22,5 +22,5 @@ int main(void)
 
 void averageDdata(double data[], int size)
 {
-   #warning function averageDdata() needs to be implemented!
+#warning function averageDdata() needs to be implemented!
 }

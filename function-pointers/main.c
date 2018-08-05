@@ -7,15 +7,15 @@ int main(void)
 {
    int result = 0;
    /* function pointer declaration */
-   int(*fpointer)(int,int) = add;  
+   int (*fpointer)(int, int) = add;
 
    /* function call by function pointer */
-   result = fpointer(2, 5);  
+   result = fpointer(2, 5);
    printf("result = %d\n", result);
 
    fpointer = multiply;
    /* function call by function pointer */
-   result = fpointer(2, 5);  
+   result = fpointer(2, 5);
    printf("result = %d\n", result);
 
    return 0;

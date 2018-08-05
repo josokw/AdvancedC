@@ -15,9 +15,10 @@ int main(int argc, char *argv[])
    /* Always check the number of required arguments */
    if (argc < 2)
    {
-      fprintf(stderr, "\tERROR %s: \n"
-                      "\tUSAGE: expected 1 or more integer typed "
-                      "commandline parameters\n\n",
+      fprintf(stderr,
+              "\tERROR %s: \n"
+              "\tUSAGE: expected 1 or more integer typed "
+              "commandline parameters\n\n",
               argv[0]);
       exit(EXIT_FAILURE);
    }
@@ -34,8 +35,9 @@ int main(int argc, char *argv[])
 
    if (!allAreIntegers)
    {
-      fprintf(stderr, "\tERROR: \n"
-                      "\tNot all command line parameters are integers!\n");
+      fprintf(stderr,
+              "\tERROR: \n"
+              "\tNot all command line parameters are integers!\n");
       exit(EXIT_FAILURE);
    }
 

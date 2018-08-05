@@ -19,14 +19,14 @@ int main(void)
    printf(" Size pointer variable pD = %lu bytes\n", sizeof(pD));
    printf(" Size pointer variable pC = %lu bytes\n\n", sizeof(pC));
 
-   printf(" pI %p points to %d\n", pI,  *pI);
+   printf(" pI %p points to %d\n", pI, *pI);
    printf(" pD %p points to %lf\n", pD, *pD);
    printf(" pC %p points to %c\n\n", pC, *pC);
 
    /* pData == &data[0] */
-   printf(" pData %p points to %d\n\n", pData, *pData); 
+   printf(" pData %p points to %d\n\n", pData, *pData);
 
-   /* pData is a pointer variable, so you can update the value, for 
+   /* pData is a pointer variable, so you can update the value, for
     * instance pData++.
     * data++ is not possible, this will result in a compiler error,
     * because you can not assign a new pointer value to an array variable.
@@ -34,11 +34,11 @@ int main(void)
     */
    pData++;
    /* pData == &data[1] */
-   printf(" pData %p points to %d\n\n", pData, *pData); 
+   printf(" pData %p points to %d\n\n", pData, *pData);
 
    pData += 3;
    /* pData == &data[4] */
-   printf(" pData %p points to %d\n\n", pData, *pData); 
+   printf(" pData %p points to %d\n\n", pData, *pData);
 
    /* A pointer difference is typed as ptrdiff_t */
    printf(" pData points to data[%ld]\n\n", pData - data);
@@ -47,7 +47,7 @@ int main(void)
    /* Array bounds checking */
    if ((pData < data) || (pData > data + DATASIZE))
    {
-       fprintf(stderr, " pData accessing 'data' out of bounds\n\n");
+      fprintf(stderr, " pData accessing 'data' out of bounds\n\n");
    }
 
    return 0;

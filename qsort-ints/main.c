@@ -23,8 +23,8 @@ int main(void)
 
 int compareInts(const void *pInt1, const void *pInt2)
 {
-   int i1 = *(const int*)pInt1;
-   int i2 = *(const int*)pInt2;
+   int i1 = *(const int *)pInt1;
+   int i2 = *(const int *)pInt2;
 
    return i1 - i2;
 }

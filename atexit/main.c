@@ -26,7 +26,7 @@ void shutdown(void)
 
 int calculate(int x)
 {
-   if (x < -10 || x > 10) 
+   if (x < -10 || x > 10)
    {
       fprintf(stderr, "ERROR calculate(): '%d' is out of range\n", x);
       exit(EXIT_FAILURE);

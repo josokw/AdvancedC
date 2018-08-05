@@ -7,13 +7,15 @@
 
 int main(void)
 {
-   float data1[SIZE1] = { -3.01, 1.05, 0.04,  -1.23, -2.5,
-                          1.234, -0.4, -0.23, 1.28,  -2.7 };
-   float data2[SIZE2] = { 1.051, 0.0423, -1.2, -2.24, 2.234 };
-   minmax_t minmax1 = { 0.0, 0.0 };
-   minmax_t minmax2 = { 0.0, 0.0 };
+   float data1[SIZE1] = {-3.01, 1.05, 0.04,  -1.23, -2.5,
+                         1.234, -0.4, -0.23, 1.28,  -2.7};
+   float data2[SIZE2] = {1.051, 0.0423, -1.2, -2.24, 2.234};
+   minmax_t minmax1 = {0.0, 0.0};
+   minmax_t minmax2 = {0.0, 0.0};
 
-   puts("Program 'functions' started -------------------------------------\n");
+   puts(
+      "Program 'functions' started "
+      "-------------------------------------\n");
 
    setAverageData(data1, SIZE1, 1.0);
    printf("  Average data1 = %f\n", averageData(data1, SIZE1));
@@ -28,7 +30,9 @@ int main(void)
    minmax2 = findMinMax(data2, SIZE2);
    printf("  data2 min = %f  max = %f\n\n", minmax2.min, minmax2.max);
 
-   puts("Program ready --------------------------------------------------\n");
+   puts(
+      "Program ready "
+      "--------------------------------------------------\n");
 
    return 0;
 }

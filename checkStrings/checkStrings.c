@@ -30,7 +30,7 @@ bool isInteger(const char str[])
    bool isOK = true;
    size_t i = 0;
 
-   for(i = 0; i < strlen(str); i++)
+   for (i = 0; i < strlen(str); i++)
    {
       if (!isdigit(str[i]))
       {
@@ -43,11 +43,12 @@ bool isInteger(const char str[])
 
 bool isMACaddress(const char str[])
 {
-   if (strlen(str) != 17) {
+   if (strlen(str) != 17)
+   {
       return false;
    }
    int s;
-   int nOK = sscanf(str, "%02x:%02x:%02x:%02x:%02x:%02x",
-                    &s, &s, &s, &s, &s, &s);
+   int nOK =
+      sscanf(str, "%02x:%02x:%02x:%02x:%02x:%02x", &s, &s, &s, &s, &s, &s);
    return (nOK == 6);
 }

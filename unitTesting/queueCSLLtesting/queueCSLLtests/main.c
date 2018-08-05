@@ -23,7 +23,7 @@ void test_sizeQueue_createQueue(void)
 {
    printf("\n---- 2. sizeQueue() and createQueue()\n");
    {
-      data_t data = { 1, "Hello queue" };
+      data_t data = {1, "Hello queue"};
       /* Create empty queue, pBack = NULL */
       queue_t queue = {NULL};
 

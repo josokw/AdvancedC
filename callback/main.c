@@ -1,15 +1,15 @@
 /* Function pointers and callback functions */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
-typedef double(*callbackMath_t)(double);
+typedef double (*callbackMath_t)(double);
 
 int sqr(int x);
 int redouble(int x);
 int halve(int x);
 
-int compose(int x, int(*pf1)(int), int(*pf2)(int));
+int compose(int x, int (*pf1)(int), int (*pf2)(int));
 double composeMath(double x, callbackMath_t f1, callbackMath_t f2);
 
 int main(void)
@@ -37,7 +37,7 @@ int halve(int x)
    return x / 2;
 }
 
-int compose(int x, int(*pf1)(int), int(*pf2)(int))
+int compose(int x, int (*pf1)(int), int (*pf2)(int))
 {
    return pf2(pf1(x));
 }

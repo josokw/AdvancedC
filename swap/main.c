@@ -1,7 +1,7 @@
 /* C uses call by value for passing function arguments.
  * We need a call by reference for changing an argument value
  * outside the function.
-*/
+ */
 
 #include <stdio.h>
 
