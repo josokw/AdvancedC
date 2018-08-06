@@ -8,10 +8,10 @@ CFLAGS = -std=c99 -Wall -Wextra -Wpedantic \
 EXECUTABLE = introUTfunctionsTests
 SOURCES = $(wildcard *.c) \
           ../functions/functions.c \
-		  ../../../_libUnity/*.c
+		  $(wildcard ../../../_libUnity/*.c)
 HEADERS = $(wildcard *.h) \
           ../functions/functions.h \
-		  ../../../_libUnity/*.h
+		  $(wildcard ../../../_libUnity/*.h)
 OBJECTS = $(SOURCES:.c=.o)
 
 .PHONY: all
