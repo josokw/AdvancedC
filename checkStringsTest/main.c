@@ -52,8 +52,7 @@ void test_isMACaddress(void)
 {
    printf("\n---- isMACaddress()\n");
 
-   {
-   }
+   TEST_FAIL_MESSAGE("Tests not yet implemented");
 }
 
 int main(void)
