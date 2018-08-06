@@ -1,11 +1,17 @@
 CC = gcc
+INCLUDING = -I../queueCSLL -I../../../_libUnity
 CFLAGS = -std=c99 -Wall -Wextra -Wpedantic \
          -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
-         -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow
+         -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow \
+		 $(INCLUDING)
 
 EXECUTABLE = unittestingQueue
-SOURCES = $(wildcard *.c)
-HEADERS = $(wildcard *.h)
+SOURCES = $(wildcard *.c) \
+          ../queueCSLL/*.c \
+		  ../../../_libUnity/*.c
+HEADERS = $(wildcard *.h) \
+          ../queueCSLL/*.h \
+		  ../../../_libUnity/*.h
 OBJECTS = $(SOURCES:.c=.o)
 
 .PHONY: all

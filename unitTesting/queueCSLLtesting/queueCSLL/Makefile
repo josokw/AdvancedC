@@ -1,17 +1,11 @@
 CC = gcc
-INCLUDING = -I../functions -I../../../_libUnity
 CFLAGS = -std=c99 -Wall -Wextra -Wpedantic \
          -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
-         -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow \
-		 $(INCLUDING)
+         -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow
 
-EXECUTABLE = introUTfunctionsTests
-SOURCES = $(wildcard *.c) \
-          ../functions/functions.c \
-		  ../../../_libUnity/*.c
-HEADERS = $(wildcard *.h) \
-          ../functions/functions.h \
-		  ../../../_libUnity/*.h
+EXECUTABLE = queueCSLL
+SOURCES = $(wildcard *.c)
+HEADERS = $(wildcard *.h)
 OBJECTS = $(SOURCES:.c=.o)
 
 .PHONY: all
@@ -35,3 +29,4 @@ clean:
 .PHONY: clean-depend
 clean-depend: clean
 	$(RM) depend
+

@@ -4,14 +4,15 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 INCLUDEPATH += $$PWD/../functions
+INCLUDEPATH += $$PWD/../../../_libUnity
 DEPENDPATH += $$PWD/../functions
 
 SOURCES += main.c \
-    unity.c
+    ../../../_libUnity/unity.c
 
 HEADERS += \
-    unity.h \
-    unity_internals.h
+    ../../../_libUnity/unity.h \
+    ../../../_libUnity/unity_internals.h
 
 win32: CONFIG(debug, debug|release) {
    OBJECTS += $$OUT_PWD/../functions/debug/functions.o

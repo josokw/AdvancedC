@@ -4,14 +4,15 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 INCLUDEPATH += $$PWD/../queueCSLL
+INCLUDEPATH += $$PWD/../../../_libUnity
 DEPENDPATH += $$PWD/../queueCSLL
 
 SOURCES += main.c \
-    unity.c
+    ../../../_libUnity/unity.c
 
 HEADERS += \
-    unity.h \
-    unity_internals.h
+    ../../../_libUnity/unity.h \
+    ../../../_libUnity/unity_internals.h
 
 win32: CONFIG(debug, debug|release) {
    OBJECTS += $$OUT_PWD/../queueCSLL/debug/queue.o
