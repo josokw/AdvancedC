@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#define SIZE_MACADDRESS 17
+
 void trim(char dest[], const char scr[])
 {
    const char *pWSleading = scr;
@@ -43,11 +45,11 @@ bool isInteger(const char str[])
 
 bool isMACaddress(const char str[])
 {
-   if (strlen(str) != 17)
+   if (strlen(str) != SIZE_MACADDRESS)
    {
       return false;
    }
-   int s;
+   unsigned int s;
    int nOK =
       sscanf(str, "%02x:%02x:%02x:%02x:%02x:%02x", &s, &s, &s, &s, &s, &s);
    return (nOK == 6);
