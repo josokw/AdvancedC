@@ -9,11 +9,14 @@ int main(void)
    /* function pointer declaration */
    int (*fpointer)(int, int) = add;
 
+   printf("Address 'add()' = %p  'fpointer' = %p\n", add, fpointer);
    /* function call by function pointer */
    result = fpointer(2, 5);
    printf("result = %d\n", result);
 
    fpointer = multiply;
+   printf("Address 'multiply()' = %p  'fpointer' = %p\n", multiply,
+          fpointer);
    /* function call by function pointer */
    result = fpointer(2, 5);
    printf("result = %d\n", result);
