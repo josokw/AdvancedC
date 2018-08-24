@@ -9,7 +9,7 @@ int main(void)
    /* function pointer variable declaration */
    int (*fpointer)(int, int) = add;
 
-   printf("Address 'add()'      = %p\nAddress 'fpointer'   = %p\n", add,
+   printf("Address 'add()'      = %p\nValue   'fpointer'   = %p\n", add,
           fpointer);
 
    /* function call by function pointer */
@@ -18,7 +18,7 @@ int main(void)
 
    /* update function pointer variable */
    fpointer = multiply;
-   printf("Address 'multiply()' = %p\nAddress 'fpointer'   = %p\n",
+   printf("Address 'multiply()' = %p\nValue   'fpointer'   = %p\n",
           multiply, fpointer);
 
    /* function call by function pointer */
