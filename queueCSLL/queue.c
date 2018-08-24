@@ -119,8 +119,10 @@ void showQueue(const queue_t *pQueue)
       do
       {
          pNext = pNext->pNextNode;
-         printf("pNode = %p  Data = '%d' '%s'  pNextNode = %p\n", pNext,
-                pNext->data.intVal, pNext->data.text, pNext->pNextNode);
+         printf(
+            "pNode = %p  Data = '%d' '%s'\n"
+            "                        pNextNode = %p\n",
+            pNext, pNext->data.intVal, pNext->data.text, pNext->pNextNode);
       } while (pNext != pQueue->pBack);
    }
 }
