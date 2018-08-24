@@ -23,11 +23,6 @@ int main(void)
    pushQueue(&queue, data);
    showQueue(&queue);
 
-   data.intVal++;
-   printf("\nAdd new data to queue\n");
-   pushQueue(&queue, data);
-   showQueue(&queue);
-
    if (!emptyQueue(&queue))
    {
       printf("\nFront iValue: %d\n", frontQueue(&queue)->intVal);
@@ -51,11 +46,6 @@ int main(void)
    printf("\nPop queue\n");
    popQueue(&queue);
    showQueue(&queue);
-   
-   printf("\nPop queue\n");
-   popQueue(&queue);
-   showQueue(&queue);
-   printf("\n");
 
    return 0;
 }
