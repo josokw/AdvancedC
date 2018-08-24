@@ -39,15 +39,19 @@ int main(void)
    printf("\nPop queue\n");
    popQueue(&queue);
    showQueue(&queue);
+
    printf("\nPop queue\n");
    popQueue(&queue);
    showQueue(&queue);
+   
    printf("\nPop queue\n");
    popQueue(&queue);
    showQueue(&queue);
+
    printf("\nPop queue\n");
    popQueue(&queue);
    showQueue(&queue);
+   
    printf("\nPop queue\n");
    popQueue(&queue);
    showQueue(&queue);
