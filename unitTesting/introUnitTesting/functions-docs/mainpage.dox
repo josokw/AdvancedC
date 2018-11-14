@@ -1,0 +1,26 @@
+/*!
+
+\mainpage Compiling and executing 
+
+This application uses a set of functions found in the \p functions module.
+These functions are buggy!
+
+Use for floating point values: float, do no use double. 
+
+\section sec1 Compiling
+
+This application must be compiled by a makefile using the make command 
+executing \link Makefile \endlink.
+
+\section sec2 Executing
+
+Use the next command to start the application.
+
+\verbatim ./introUTfunctions
+\endverbatim
+
+The application will show some calculated data (printed to stdout).
+
+Are the calculations correct? Use unit tests.
+
+*/

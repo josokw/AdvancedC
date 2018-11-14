@@ -14,7 +14,7 @@ int main(void)
    minmax_t minmax2 = {0.0, 0.0};
 
    puts(
-      "Program 'functions' started "
+      "Program started "
       "-------------------------------------\n");
 
    setAverageData(data1, SIZE1, 1.0);
