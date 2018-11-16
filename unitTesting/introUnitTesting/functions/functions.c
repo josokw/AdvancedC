@@ -51,21 +51,13 @@ void setAverageData(float data[], int size, float average)
 
 void setLimitData(float data[], int size, float min, float max)
 {
-   minmax_t minmax = {0.0, 0.0};
+   minmax_t actualMinMax = findMinMax(data, size);
+   float A = actualMinMax.min / actualMinMax.max;
+   float B = actualMinMax.min + actualMinMax.max;
    int i = 0;
 
-   setAverageData(data, size, 0.0);
-   minmax = findMinMax(data, size);
    for (i = 0; i < size; i++)
    {
-      data[i] *= (max / minmax.max);
-   }
-   minmax = findMinMax(data, size);
-   if (minmax.min < min)
-   {
-      for (i = 0; i < size; i++)
-      {
-         data[i] *= (max / minmax.min);
-      }
+      data[i] = A * data[i] + B;
    }
 }
