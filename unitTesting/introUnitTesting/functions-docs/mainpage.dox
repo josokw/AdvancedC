@@ -21,6 +21,6 @@ Use the next command to start the application.
 
 The application will show some calculated data (printed to stdout).
 
-Are the calculations correct? Use unit tests.
+Are these calculations correct? Use unit tests.
 
 */
