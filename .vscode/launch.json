@@ -4,13 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+
         {
             "name": "(gdb) argcargvIsInt",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/argcargv-isInt/argcargvIsInt",
-            "args": [1 2 3 4],
+            "args": ["1", "2", "3"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
