@@ -13,6 +13,6 @@ Some unit test code examples are available. Using the
 [Unity](http://www.throwtheswitch.org/unity/) unit test library.
 Unity is written in 100% pure C code. It follows ANSI-C standards.
 
-### Debugging in Visual Studio Code: dbg
+### Debugging in Visual Studio Code: gdb
 
-In every Makefile the compiler flag *-g* is used. Some *dbg* launches are available in *.vscode/launch.json*.
+In every Makefile the compiler flag *-g* is used. Some *gdb* launches are available in *.vscode/launch.json*.
