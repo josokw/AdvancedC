@@ -29,7 +29,7 @@ float averageData(const float data[], int size);
 void setAverageData(float data[], int size, float average);
 
 /**
- * Coverts all values in the input array \p data so that the minimnal and
+ * Converts all values in the input array \p data so that the minimnal and
  * maximal value becomes equal to \p min and \p max. This conversion
  * function uses scaling (multiplication by A) and adds an offset (B) to
  * the input values:
