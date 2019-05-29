@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 
 #define DATASIZE 5
@@ -40,8 +41,9 @@ int main(void)
    /* pData == &data[4] */
    printf(" pData %p points to %d\n\n", pData, *pData);
 
-   /* A pointer difference is typed as ptrdiff_t */
-   printf(" pData points to data[%ld]\n\n", pData - data);
+   /* A pointer difference is typed as ptrdiff_t in stddef.h */
+   ptrdiff_t pdif = pData - data;
+   printf(" pData points to data[%ld]\n\n", pdif);
 
    pData += 10;
    /* Array bounds checking */
