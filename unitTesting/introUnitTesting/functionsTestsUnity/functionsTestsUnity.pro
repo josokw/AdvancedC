@@ -7,12 +7,9 @@ INCLUDEPATH += $$PWD/../functions
 INCLUDEPATH += $$PWD/../../../_libUnity
 DEPENDPATH += $$PWD/../functions
 
-SOURCES += main.c \
-    ../../../_libUnity/unity.c
-
-HEADERS += \
-    ../../../_libUnity/unity.h \
-    ../../../_libUnity/unity_internals.h
+SOURCES += \
+    ../../../_libUnity/unity.c \
+    testMain.c
 
 win32: CONFIG(debug, debug|release) {
    OBJECTS += $$OUT_PWD/../functions/debug/functions.o
@@ -22,3 +19,5 @@ win32: CONFIG(release, debug|release) {
 }
 
 unix: OBJECTS += $$OUT_PWD/../functions/functions.o
+
+

@@ -1,0 +1,34 @@
+CC = g++
+INCLUDING = -I../functions -I../../../_libCatch2
+CFLAGS = -std=c++14 -g -Wall -Wextra -Wpedantic $(INCLUDING)
+
+EXECUTABLE = introUTfunctionsTestsCatch2
+SOURCES = $(wildcard *.cpp) \
+          ../functions/functions.c
+HEADERS = $(wildcard *.h) \
+          ../functions/functions.h \
+		  ../../../_libCatch2/catch.hpp
+OBJECTS := $(SOURCES:.c=.o)
+OBJECTS := $(OBJECTS:.cpp=.o)
+
+.PHONY: all
+all: $(EXECUTABLE)
+
+-include depend
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(CFLAGS) $(OBJECTS) $(CLIBS) -o $@
+
+# Create dependency file
+depend: $(SOURCES)
+	$(CC) -MM $(CFLAGS) $^ > $@
+
+# Create a clean environment
+.PHONY: clean
+clean:
+	$(RM) $(EXECUTABLE) $(OBJECTS)
+
+# Clean up dependency file
+.PHONY: clean-depend
+clean-depend: clean
+	$(RM) depend

@@ -4,10 +4,14 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     functions \
-    functionsTests
+    functionsTestsUnity \
+    functionsTestsCatch2  
 
 # functions.subdir is implicitly set to "functions"
-functionsTests.subdir = functionsTests
+#functionsTestsUnity.subdir = functions
+#functionsTestsCatch2.subdir = functions
+
 
 # hierarchical relationship between components
-functionsTests.depends = functions
+functionsTestsUnity.depends = functions
+functionsTestsCatch2.depends = functions
