@@ -1,13 +1,13 @@
-CC = g++
-INCLUDING = -I../functions -I../../../_libCatch2
-CFLAGS = -std=c++14 -g -Wall -Wextra -Wpedantic $(INCLUDING)
+CXX = g++
+INCLUDING += -I../functions -ICatch2
+CXXFLAGS = -std=c++14 -g -Wall -Wextra -Wpedantic $(INCLUDING)
 
 EXECUTABLE = introUTfunctionsTestsCatch2
 SOURCES = $(wildcard *.cpp) \
           ../functions/functions.c
 HEADERS = $(wildcard *.h) \
           ../functions/functions.h \
-		  ../../../_libCatch2/catch.hpp
+          Catch2/catch.hpp
 OBJECTS := $(SOURCES:.c=.o)
 OBJECTS := $(OBJECTS:.cpp=.o)
 
@@ -17,11 +17,12 @@ all: $(EXECUTABLE)
 -include depend
 
 $(EXECUTABLE): $(OBJECTS)
-	$(CC) $(CFLAGS) $(OBJECTS) $(CLIBS) -o $@
+	echo "Objects = " $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(OBJECTS) $(CLIBS) -o $@
 
 # Create dependency file
 depend: $(SOURCES)
-	$(CC) -MM $(CFLAGS) $^ > $@
+	$(CXX) -MM $(CXXFLAGS) $^ > $@
 
 # Create a clean environment
 .PHONY: clean

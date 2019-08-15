@@ -5,7 +5,7 @@ CONFIG -= qt
 CONFIG += c++17
 
 INCLUDEPATH += $$PWD/../functions
-INCLUDEPATH += $$PWD/../../../_libCatch2
+INCLUDEPATH += $$PWD/Catch2
 DEPENDPATH += $$PWD/../functions
 
 SOURCES += testMain.cpp \

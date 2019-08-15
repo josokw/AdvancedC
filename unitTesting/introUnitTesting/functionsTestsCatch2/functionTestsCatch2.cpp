@@ -3,9 +3,11 @@
  * Test code should be complemented with more tests.
  */
 
-#include "../../../_libCatch2/catch.hpp"
+#include "catch.hpp"
+
+/* Make function names C linkable (no C++ name mangling) */
 extern "C" {
-#include "../functions/functions.h"
+#include "functions.h"
 }
 
 #include <stdio.h>
