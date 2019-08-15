@@ -9,9 +9,11 @@ level.
 Each example is compilable using QtCreator by opening the related *.pro*
 file or the related GNU *Makefile* for gcc compiling C99.
 
-Some unit test code examples are available. Using the
-[Unity](http://www.throwtheswitch.org/unity/) unit test library.
+Some unit test code examples are available: 
+- Using the [Unity](http://www.throwtheswitch.org/unity/) unit test library.
 Unity is written in 100% pure C code. It follows ANSI-C standards.
+- Using the [Catch2](https://github.com/catchorg/Catch2) unit test library in a single header file. 
+Catch2 is written in C++11.
 
 ### Debugging in Visual Studio Code: gdb
 
