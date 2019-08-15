@@ -112,10 +112,10 @@ queueCSLL/queueCSLL
 singlyLinkedList/singlyLinkedList
 swap/swap
 testMaxAllocation/testMaxAllocation
-unitTesting/introUnitTesting/functions/introUTfunctions
-unitTesting/introUnitTesting/functionsTests/introUTfunctionsTests
 checkStringsTest/checkStringsTest
 queueCSLLtest/queueCSLLtest
 multidimArrays/multidimArrays
 bitsbytes/bitsbytes
 static/static
+unitTesting/introUnitTesting/functionsTestsCatch2/functionsTestsCatch2
+unitTesting/introUnitTesting/functionsTestsUnity/functionsTestsUnity
