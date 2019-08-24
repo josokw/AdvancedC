@@ -8,6 +8,7 @@ int main(void)
 {
    double buffer[ARRAYSIZE] = {1.0, 2.0, 3.0, 4.0};
 
+   printf("Size double    = %zu bytes\n\n", sizeof(double));
    /* buffer is an array type variable */
    printf("Size buffer    = %zu bytes\n", sizeof(buffer));
    printf("Size buffer[0] = %zu bytes\n", sizeof(buffer[0]));
@@ -25,6 +26,6 @@ void printArraySize(const double b[])
    /* b is an array pointer type: double* */
    printf("Size b         = %zu bytes\n", sizeof(b));
    printf("Size b[0]      = %zu bytes\n", sizeof(b[0]));
-   printf("Number of data values in buffer = %zu is wrong\n\n",
+   printf("Number of data values in buffer = %zu IS WRONG\n\n",
           sizeof(b) / sizeof(b[0]));
 }
