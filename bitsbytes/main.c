@@ -11,16 +11,21 @@ void resetBit(byte_t *pByte, int iBit);
 int main(void)
 {
    byte_t *pMemory = (byte_t *)0x00030200;
-   byte_t bytesMemory[NBYTES] = {0x11, 0x22};
+   byte_t bytesMemory[NBYTES] = {0x00, 0x11, 0x22};
 
+   puts("Bytes in bytesMemory[NBYTES]:");
    hexDump(bytesMemory, NBYTES);
+   puts("");
 
    /* Set byte in 0x0003020 to 0xAA, execution is avoided */
    /* *(pMemory + 0x0B) = 0xAA; */
 
-   /* Set bit 3 in bytesMemory[NBYTES] */
+   puts("Set bit 3 in byte 5 in bytesMemory[NBYTES]:");
    setBit(bytesMemory + 5, 3);
    hexDump(bytesMemory, NBYTES);
+   puts("");
+
+   puts("Set bit 5 in byte 6 in bytesMemory[NBYTES]:");
    setBit(bytesMemory + 6, 5);
    hexDump(bytesMemory, NBYTES);
 
