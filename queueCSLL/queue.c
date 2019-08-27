@@ -1,14 +1,5 @@
-/* Queue: First In First Out (FIFO).
- * Implementation: Circular Singly Linked List (CSLL).
- * A queue has a front (for popping, is removing data from the queue) and
- * a back (for pushing, is inserting data into the queue).
- *
- * Needs only one external pointer pBack, that points at the back node.
- * The back node contains a pointer pointing to the front of the queue
- * (circular data structure).
- */
-
 #include "queue.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -28,9 +19,6 @@ int emptyQueue(const queue_t *pQueue)
    return pQueue->pBack == NULL;
 }
 
-/** Returns number of nodes in queue.
- * @todo Add implementation.
- */
 size_t sizeQueue(const queue_t *pQueue)
 {
    size_t size = 0;
@@ -60,9 +48,6 @@ data_t *backQueue(const queue_t *pQueue)
    return pBackData;
 }
 
-/** Push new data to the back of the queue.
- * @pre pQueue != NULL
- */
 void pushQueue(queue_t *pQueue, data_t data)
 {
    node_t *pNew = (node_t *)malloc(sizeof(node_t));
@@ -75,9 +60,6 @@ void pushQueue(queue_t *pQueue, data_t data)
    }
 }
 
-/** Remove data from the front of the queue.
- * @pre pQueue != NULL
- */
 void popQueue(queue_t *pQueue)
 {
    if (pQueue->pBack != NULL)
@@ -96,13 +78,11 @@ void popQueue(queue_t *pQueue)
    }
 }
 
-/** Emptying (delete) queue.
- * @todo Add implementation
- */
 void deleteQueue(queue_t *pQueue)
 {
    /* local pointer for traversing all nodes in queue */
    node_t *pDelete = pQueue->pBack;
+   
 }
 
 void showQueue(const queue_t *pQueue)

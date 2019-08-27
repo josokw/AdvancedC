@@ -1,0 +1,26 @@
+/*! 
+
+\mainpage Documentation queueCSLL
+
+\section sec1 How to compile
+
+\subsection sbs1 QtCreator
+
+Start QtCreator and open the project file queueCSLL.pro and click the green 
+run button ...
+
+\warning The Makefile file will be overwritten by QtCreator qmake.
+
+\subsection sbs2 Visual Studio Code
+
+...
+
+\todo Add text for compiling
+
+\section sec2 How to run
+
+If the compiled executable is available ...
+
+\todo Add text for running the code
+
+*/
