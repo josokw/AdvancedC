@@ -1,17 +1,17 @@
 CC = gcc
-INCLUDING = -I../checkStrings -I../_libUnity
+INCLUDING = -I../checkStrings -IUnity
 CFLAGS = -std=c99 -g -Wall -Wextra -Wpedantic \
          -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
          -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow \
 		 $(INCLUDING)
 
-EXECUTABLE = checkStringsTest
+EXECUTABLE = checkStrings-test
 SOURCES = $(wildcard *.c) \
           ../checkStrings/checkStrings.c \
-		  $(wildcard ../_libUnity/*.c)
+		  $(wildcard Unity/*.c)
 HEADERS = $(wildcard *.h) \
           $(wildcard ../checkStrings/*.h) \
-		  $(wildcard ../_libUnity/*.h)
+		  $(wildcard Unity/*.h)
 OBJECTS = $(SOURCES:.c=.o)
 
 .PHONY: all
