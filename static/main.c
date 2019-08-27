@@ -8,24 +8,25 @@ int main(void)
 {
    int resetValue = 0;
 
-   printf("\n f1()  %d ", f1());
+   printf("\n Call 4 times f1(), returned values:  %d ", f1());
    printf(" %d ", f1());
    printf(" %d ", f1());
    printf(" %d\n", f1());
 
-   printf(" f2()  %d ", f2());
+   printf(" Call 4 times f2(), returned values:  %d ", f2());
    printf(" %d ", f2());
    printf(" %d ", f2());
    printf(" %d\n\n", f2());
 
-   printf(" addingup(2)  =%3d  ", addingup(2));
+   printf(" addingup(0)  =%3d  ", addingup(0));
    printf(" addingup(5)  =%3d  ", addingup(5));
    printf(" addingup(-2) =%3d\n\n", addingup(-2));
 
    /* Reset addingup() */
+   puts(" Reset addingup()");
    resetValue = addingup(0);
    addingup(-resetValue);
-   printf(" addingup(0) returns value static int sum =%3d\n\n",
+   printf(" addingup(0) returns actual value 'static int sum' =%3d\n\n",
           addingup(0));
 
    return 0;
