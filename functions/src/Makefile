@@ -3,7 +3,7 @@ CFLAGS = -std=c99 -g -Wall -Wextra -Wpedantic \
          -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
          -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow
 
-EXECUTABLE = introUTfunctions
+EXECUTABLE = functions
 SOURCES = $(wildcard *.c)
 HEADERS = $(wildcard *.h)
 OBJECTS = $(SOURCES:.c=.o)

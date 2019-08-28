@@ -1,12 +1,12 @@
 CXX = g++
-INCLUDING += -I../functions -ICatch2
+INCLUDING += -I../src -ICatch2
 CXXFLAGS = -std=c++14 -g -Wall -Wextra -Wpedantic $(INCLUDING)
 
-EXECUTABLE = introUTfunctionsTestsCatch2
+EXECUTABLE = functionsTestCatch2
 SOURCES = $(wildcard *.cpp) \
-          ../functions/functions.c
+          ../src/functions.c
 HEADERS = $(wildcard *.h) \
-          ../functions/functions.h \
+          ../src/functions.h \
           Catch2/catch.hpp
 OBJECTS := $(SOURCES:.c=.o)
 OBJECTS := $(OBJECTS:.cpp=.o)

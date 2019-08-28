@@ -116,6 +116,7 @@ checkStrings-test/checkStrings-test
 multidimArrays/multidimArrays
 bitsbytes/bitsbytes
 static/static
-unitTesting/introUnitTesting/functionsTestsCatch2/functionsTestsCatch2
-unitTesting/introUnitTesting/functionsTestsUnity/functionsTestsUnity
 queueCSLL-test/queueCSLLtest
+functions/src/functions
+functions/testCatch2/testCatch2
+functions/testUnity/testUnity
