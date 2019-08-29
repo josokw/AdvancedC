@@ -1,5 +1,5 @@
 CC = gcc
-INCLUDING = -I../queueCSLL -IUnity
+INCLUDING = -I../app -IUnity
 CFLAGS = -std=c99 -g -Wall -Wextra -Wpedantic \
          -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
          -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow \
@@ -7,10 +7,10 @@ CFLAGS = -std=c99 -g -Wall -Wextra -Wpedantic \
 
 EXECUTABLE = queueCSLLtest
 SOURCES = $(wildcard *.c) \
-          ../queueCSLL/*.c \
+          ../app/*.c \
 		  $(wildcard Unity/*.c)
 HEADERS = $(wildcard *.h) \
-          ../queueCSLL/*.h \
+          ../app/*.h \
 		  $(wildcard Unity/*.h)
 OBJECTS = $(SOURCES:.c=.o)
 

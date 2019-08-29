@@ -1,4 +1,5 @@
 #include "queue.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -35,10 +36,6 @@ int main(void)
    popQueue(&queue);
    showQueue(&queue);
 
-   printf("\nPop queue\n");
-   popQueue(&queue);
-   showQueue(&queue);
-   
    printf("\nPop queue\n");
    popQueue(&queue);
    showQueue(&queue);
