@@ -69,7 +69,7 @@
             "name": "(gdb) functions",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/unitTesting/introUnitTesting/functions/introUTfunctions",
+            "program": "${workspaceFolder}/functions/app/functions",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
