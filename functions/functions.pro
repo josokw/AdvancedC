@@ -3,10 +3,10 @@ cache()
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    src \
+    app \
     testUnity \
     testCatch2  
 
 # hierarchical relationship between components
-testUnity.depends = src
-testCatch2.depends = src
+testUnity.depends = app
+testCatch2.depends = app

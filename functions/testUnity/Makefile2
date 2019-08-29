@@ -1,16 +1,16 @@
 CC = gcc
-INCLUDING = -I../src -IUnity
+INCLUDING = -I../app -IUnity
 CFLAGS = -std=c99 -g -Wall -Wextra -Wpedantic \
          -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
          -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow \
          $(INCLUDING)
 
-EXECUTABLE = functionsTestUnity
+EXECUTABLE = testUnity
 SOURCES = $(wildcard *.c) \
-          ../src/functions.c \
+          ../app/functions.c \
           $(wildcard Unity/*.c)
 HEADERS = $(wildcard *.h) \
-          ../src/functions.h \
+          ../app/functions.h \
           $(wildcard Unity/*.h)
 OBJECTS = $(SOURCES:.c=.o)
 
