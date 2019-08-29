@@ -1,5 +1,5 @@
 CC = gcc
-INCLUDING = -I../checkStrings -IUnity
+INCLUDING = -I../app -IUnity
 CFLAGS = -std=c99 -g -Wall -Wextra -Wpedantic \
          -Wlogical-op -Wshadow -Wformat=2 -Wwrite-strings -Wfloat-equal \
          -Wstrict-prototypes -Wredundant-decls -Wstrict-overflow \
@@ -7,10 +7,10 @@ CFLAGS = -std=c99 -g -Wall -Wextra -Wpedantic \
 
 EXECUTABLE = checkStrings-test
 SOURCES = $(wildcard *.c) \
-          ../checkStrings/checkStrings.c \
+          ../app/checkStrings.c \
 		  $(wildcard Unity/*.c)
 HEADERS = $(wildcard *.h) \
-          $(wildcard ../checkStrings/*.h) \
+          $(wildcard ../app/*.h) \
 		  $(wildcard Unity/*.h)
 OBJECTS = $(SOURCES:.c=.o)
 
