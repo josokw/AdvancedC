@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SIZE_MACADDRESS 17
+#define SIZE_MACADDRESS 17 /*!< Format MAC address 17 chars */
 
 void trim(char dest[], const char scr[])
 {
