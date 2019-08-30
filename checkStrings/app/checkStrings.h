@@ -8,13 +8,13 @@
  */
 void trim(char dest[], const char scr[]);
 /*!
- * Checks is string is integer.
+ * Checks if a string represents an integer.
  * Only checks integers without + or - sign.
  * \pre No leading + or - sign.
  */
 bool isInteger(const char str[]);
 /*!
- * Checks if string is a valid MAC address.
+ * Checks if a string represents a valid MAC address.
  */
 bool isMACaddress(const char str[]);
 
