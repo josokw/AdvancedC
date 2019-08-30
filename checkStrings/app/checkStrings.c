@@ -26,7 +26,6 @@ void trim(char dest[], const char scr[])
    dest[i] = '\0';
 }
 
-/* Only checks integers without + or - sign */
 bool isInteger(const char str[])
 {
    bool isOK = true;
