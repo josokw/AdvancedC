@@ -2,6 +2,14 @@
 
 \mainpage Documentation queueCSLL
 
+\author Jos Codewarrior
+
+\section secDS CSLL data structure
+
+Data structure for the implementation of a queue:
+
+\image html queueCSLL.png
+
 \section sec1 How to compile
 
 \subsection sbs1 QtCreator
