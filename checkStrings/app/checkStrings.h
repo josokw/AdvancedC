@@ -15,9 +15,9 @@ void trim(char dest[], const char scr[]);
  */
 bool isInteger(const char str[]);
 /*!
- * Checks if a string represents a valid MAC address in
- * standard IEEE 802 format six groups of two hexadicimal digits
- * separated by colons : 
+ * Checks if a string represents a valid traditional MAC address (12-digit 
+ * hecadecimal numbers) in standard IEEE 802 format six groups of two 
+ * hexadicimal digits separated by colons : 
  *  \todo Add separation by hyphens -
  */
 bool isMACaddress(const char str[]);
