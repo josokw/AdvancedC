@@ -28,7 +28,7 @@ int main(void)
    printf("---- Not sorted:\n");
    for (i = 0; i < SIZE; i++)
    {
-      printf("{%d, %.3lf}\n", data[i].iData, data[i].dData);
+      printf("data[%d] = {%2d, %7.3lf}\n", i, data[i].iData, data[i].dData);
    }
    printf(" \n");
 
@@ -39,7 +39,7 @@ int main(void)
    printf("-------- Sorted:\n");
    for (i = 0; i < SIZE; i++)
    {
-      printf("{%d, %.3lf}\n", data[i].iData, data[i].dData);
+      printf("data[%d] = {%2d, %7.3lf}\n", i, data[i].iData, data[i].dData);
    }
    printf("\n");
 
