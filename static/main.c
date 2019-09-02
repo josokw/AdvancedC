@@ -8,19 +8,19 @@ int main(void)
 {
    int resetValue = 0;
 
-   printf("\n Call 4 times f1(), returned values:  %d ", f1());
+   printf("\n f1() called 4 times, returned values:  %d ", f1());
    printf(" %d ", f1());
    printf(" %d ", f1());
    printf(" %d\n", f1());
 
-   printf(" Call 4 times f2(), returned values:  %d ", f2());
+   printf(" f2() called 4 times, returned values:  %d ", f2());
    printf(" %d ", f2());
    printf(" %d ", f2());
    printf(" %d\n\n", f2());
 
-   printf(" addingup(0)  =%3d  ", addingup(0));
-   printf(" addingup(5)  =%3d  ", addingup(5));
-   printf(" addingup(-2) =%3d\n\n", addingup(-2));
+   printf(" addingup(0)  = %d\n", addingup(0));
+   printf(" addingup(5)  = %d\n", addingup(5));
+   printf(" addingup(-2) = %d\n\n", addingup(-2));
 
    /* Reset addingup() */
    puts(" Reset addingup()");
