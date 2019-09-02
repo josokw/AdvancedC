@@ -109,10 +109,9 @@ pointerVariables/pointerVariables
 qsort/qsort
 qsort-ints/qsort-ints
 queueCSLL/queueCSLL
-singlyLinkedList/singlyLinkedList
+singlyLinkedList/app/singlyLinkedList
 swap/swap
 testMaxAllocation/testMaxAllocation
-checkStrings-test/checkStrings-test
 multidimArrays/multidimArrays
 bitsbytes/bitsbytes
 static/static
@@ -121,3 +120,5 @@ functions/app/functions
 functions/testCatch2/testCatch2
 functions/testUnity/testUnity
 compare/compare
+checkStrings/app/checkStrings
+checkStrings/test/checkStrings-test
