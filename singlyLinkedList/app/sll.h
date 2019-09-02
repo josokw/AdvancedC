@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-/*! SLL node */
+/*! SLL node, data is 1 int */
 typedef struct node {
    int data;
    struct node *pNextNode;

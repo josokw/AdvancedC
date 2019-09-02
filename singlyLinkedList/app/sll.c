@@ -1,5 +1,7 @@
 #include "sll.h"
 
+#include <stdio.h>
+
 size_t sizeSLL(const node_t *pHead)
 {
    const node_t *pNext = pHead;
