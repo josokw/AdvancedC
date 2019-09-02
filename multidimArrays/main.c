@@ -21,13 +21,13 @@ int main(void)
       {{102, 122}, {202, 222}, {302, 322}},
       {{103, 133}, {203, 233}, {303, 333}}};
 
-   printf("---- 1 dim array (%d):\n", MAX_ROW);
+   printf("---- 1 dimensional array (%d):\n", MAX_ROW);
    print1DimArray(data1D, MAX_ROW);
 
-   printf("\n---- 2 dim array (%d x %d):\n", MAX_ROW, MAX_COLUMN);
+   printf("\n---- 2 dimensional array (%d x %d):\n", MAX_ROW, MAX_COLUMN);
    print2DimArray(data2D, MAX_ROW);
 
-   printf("\n---- 3 dim array (%d x %d x %d):\n", MAX_ROW, MAX_COLUMN,
+   printf("\n---- 3 dimensional array (%d x %d x %d):\n", MAX_ROW, MAX_COLUMN,
           MAX_DEPTH);
    print3DimArray(data3D, MAX_ROW);
 
