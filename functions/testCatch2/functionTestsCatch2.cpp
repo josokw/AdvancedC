@@ -24,6 +24,7 @@ TEST_CASE("Functions")
          REQUIRE(result.min == Approx(-1.0));
          REQUIRE(result.max == Approx(-1.0));
       }
+
       {
          float data2[5] = {-1.0, 0.0, 1.0, 2.0, 3.0};
          minmax_t result = findMinMax(data2, 5);
@@ -54,6 +55,7 @@ TEST_CASE("Functions")
 
          REQUIRE(averageData(data1, 5) == Approx(2.0));
       }
+      
       {
          float data2[5] = {1.0, -1.0, 1.0, -1.0, 1.0};
 
