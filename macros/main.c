@@ -38,9 +38,12 @@ int main(void)
    PRINT_VALUE(d, i4);
    PRINT_VALUE(lf, v);
    puts("");
+   
    TEST(v > 2.0);
    TEST(i3 < 1 && i4 < 1);
    puts("");
+
+   PRINT_VALUE(d, SQR(SQR(3)));
    WARNING("Macros can become complex: %d\n", SQR(SQR(3)));
 
    return 0;
