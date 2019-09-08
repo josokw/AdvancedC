@@ -22,7 +22,7 @@ int main(void)
 
    printf(" pI %p points to %d\n", pI, *pI);
    printf(" pD %p points to %lf\n", pD, *pD);
-   printf(" pC %p points to %c\n\n", pC, *pC);
+   printf(" pC %p points to '%c'\n\n", pC, *pC);
 
    /* pData == &data[0] */
    printf(" pData %p points to %d\n", pData, *pData);
@@ -43,7 +43,7 @@ int main(void)
 
    /* A pointer difference is typed as ptrdiff_t in stddef.h */
    ptrdiff_t pdif = pData - data;
-   printf(" pData points to data[%ld]\n\n", pdif);
+   printf(" pData points to data[%ld] = %d\n\n", pdif, data[pdif]);
 
    pData += 10;
    /* Array bounds checking */
