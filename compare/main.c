@@ -23,38 +23,43 @@ int main(void)
 
    printf("d1      = %.17lf\n", d1);
    printf("f1      = %.17f\n", f1);
-   printf("d2      = %.17lf\n", d2);
+   printf("d2      = %.17lf\n\n", d2);
    printf("d1 + d2 = %.17lf\n\n", d1 + d2);
 
    if (d1 == f1)
    {
-      printf("double 0.1 == float 0.1\n");
+      printf("double d1 0.1 == float f1 0.1\n\n");
    }
    else
    {
-      printf("double 0.1 != float 0.1\n");
+      printf("double d1 0.1 != float f1 0.1\n\n");
    }
-   printf("\n");
 
    if (d1 + d2 == 0.3)
    {
-      printf("d1 + d2 == 0.3   0.1 + 0.2 == 0.3\n");
+      printf("d1 + d2 == 0.3   0.1 + 0.2 == 0.3\n\n");
    }
    else
    {
-      printf("d1 + d2 != 0.3   0.1 + 0.2 != 0.3\n");
+      printf("d1 + d2 != 0.3   0.1 + 0.2 != 0.3\n\n");
    }
-   puts("");
 
    if (fequal(d1 + d2, 0.3))
    {
-      printf("fequal(d1 + d2, 0.3)   0.1 + 0.2 == 0.3\n");
+      printf(
+         "fequal(d1 + d2, 0.3)   0.1 + 0.2 == 0.3\n"
+         "                       for EPSILON == "
+         "%.15lf\n\n",
+         EPSILON);
    }
    else
    {
-      printf("fequal(d1 + d2, 0.3)   0.1 + 0.2 != 0.3\n");
+      printf(
+         "fequal(d1 + d2, 0.3)   0.1 + 0.2 != 0.3\n"
+         "                       for EPSILON == "
+         "%.15lf\n\n",
+         EPSILON);
    }
-   puts("");
 
    return 0;
 }
