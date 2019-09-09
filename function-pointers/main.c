@@ -14,7 +14,7 @@ int main(void)
 
    /* function call by function pointer */
    result = fpointer(2, 5);
-   printf("result = %d\n\n", result);
+   printf("result = fpointer(2, 5);  result = %d\n\n", result);
 
    /* update function pointer variable */
    fpointer = multiply;
@@ -23,7 +23,7 @@ int main(void)
 
    /* function call by function pointer */
    result = fpointer(2, 5);
-   printf("result = %d\n", result);
+   printf("result = fpointer(2, 5);  result = %d\n", result);
 
    return 0;
 }
